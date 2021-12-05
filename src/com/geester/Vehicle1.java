@@ -1,7 +1,6 @@
 package com.geester;
 
-
-public class Vehicle1 
+class Variable
     {
 	int price;
 	int speed;
@@ -16,7 +15,22 @@ public class Vehicle1
 	}
 	
 	}
+ class Vehicle1
+{
+	public static void main(String args[])
+	{
+	Variable vec1= new Variable();
+	  vec1.price=2000;
+	  vec1.speed=100;
+	  vec1.model="audii";
+	  vec1.color="red";
+	  System.out.println("price="+vec1.price);
+	  System.out.println("speed="+vec1.speed);
+	  System.out.println("model="+vec1.model);
+	  System.out.println("color="+vec1.color);
+}
 
+}
 	
 
 	

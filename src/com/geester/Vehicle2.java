@@ -1,24 +1,26 @@
 package com.geester;
 
-public class Vehicle2
+class Getset
 {
 	int price;
 	int speed;
 	String model;
 	String color;
 	
-	public int getprice()
+public int getprice()
 	{
 		return this.price;
 	}
-	public int getspeed()
+public int getspeed()
 	{
 		return this.speed;
 	}
-	public String getmodel() {
+public String getmodel() 
+    {
 		 return this.model;
 	}
-	public String getcolor() {
+public String getcolor()
+    {
 		return  this.color;
 	}
 	public void setprice(int price)
@@ -38,5 +40,19 @@ public class Vehicle2
 		this.color=color;
 	}
 }
-
+class Vehicle2
+{
+public static void main(String args[])
+{
+  Getset vec = new Getset();
+  vec.setprice(1000);
+  vec.setspeed(100);
+  vec.setmodel("audii");
+  vec.setcolor("red");
+  System.out.println("price="+vec.getprice());
+  System.out.println("speed="+vec.getspeed());
+  System.out.println("model="+vec.getmodel());
+  System.out.println("color="+vec.getcolor());
+ }
+}
 
